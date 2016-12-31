@@ -1,7 +1,0 @@
-Install R.  If you are on Windows, install Rtools, and make sure R and Rtools are in a path with no spaces (e.g. "C:\R\" as opposed to "C:\Program Files\R".  Also on Windows, make sure that you include both R and Rtools in the system path (This is an option upon Rtools installation - the system path to R on a 64 bit Windows system with the R folder in "C:\R\" would be "C:\R\R-3.2.1\bin\x64").
-
-From the R console, first install Rcpp and RcppArmadillo.  Type "install.packages(c("Rcpp","RcppArmadillo"),type="source")" and select a mirror (there are two kinds of mirrors, HTTP or HTTPS; if one doesn't work, try the other).
-
-If you downloaded the package locally, then to install it, type "install.packages("mvcluster_1.0.tar.gz",repos=NULL,type="source")" in the directory of the source package.  If you're installing from CRAN, you should just be able to type "install.packages("mvcluster",type="source")".
-
-The package should now be loadable by typing "library(mvcluster)".

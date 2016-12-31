@@ -1,3 +1,0 @@
-useDynLib(mvcluster)
-exportPattern("^[[:alpha:]]+")
-importFrom(Rcpp, evalCpp)
