@@ -60,7 +60,7 @@ lv1 = [0.45; 1];
 lz2 = 0.018;
 lv2 = [0.5; 0.7];
 % getting first cluster
-[rowClus1, colClus1, z1, U1, V1, obj1] = mvssvd(M, lz1, lv1);
+[rowClus1, colClus1, z1, U1, V1, obj1] = mvsvdl1(M, lz1, lv1);
 fprintf('\nThe distribution of the true labels of the first identified cluster.\n');
 results1=tbl(lbl(rowClus1 ~= 0));
 disp([[{'True Label: '};{'Counts: '}] num2cell(results1)]);
@@ -71,7 +71,7 @@ M2_dv{1} = M_phe(rowClus1 == 0, :);
 M2_dv{2} = M_gen(rowClus1 == 0, :);
 lbl2 = lbl(rowClus1 == 0);
 
-[rowClus2, colClus2, z2, U2, V2, obj2] = mvssvd(M2_dv, lz2, lv2);
+[rowClus2, colClus2, z2, U2, V2, obj2] = mvsvdl1(M2_dv, lz2, lv2);
 fprintf('\nThe distribution of the true labels of the second identified cluster.\n');
 results2=tbl(lbl2(rowClus2 ~= 0));
 disp([[{'True Label: '};{'Counts: '}] num2cell(results2)]);

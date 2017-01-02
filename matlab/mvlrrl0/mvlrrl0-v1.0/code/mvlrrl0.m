@@ -1,4 +1,4 @@
-function [z, U, V, obj] = mvslra_prox(M, sz, sv, iSeedV1) 
+function [z, U, V, obj] = mvlrrl0(M, sz, sv, iSeedV1) 
 
 % Problem formulation:
 % min (1/2) \sum ||M_i - (z \dot u_i)v_i^T||_F^2

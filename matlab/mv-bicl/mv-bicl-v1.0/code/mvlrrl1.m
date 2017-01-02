@@ -1,4 +1,4 @@
-function [rowClus, colClus, z, U, V, obj] = mvslra(M, lz, lu, lv, maxRowClus, view_weight, optimal_z) 
+function [rowClus, colClus, z, U, V, obj] = mvlrrl1(M, lz, lu, lv, maxRowClus, view_weight, optimal_z) 
 % Optimization problem:
 % \sum_i(||M_i - (u_i \dot z) * v_i^T||_F^2) + Lz * ||z||_1 + \sum_i(Lu_i * ||u_i||_1)
 % + \sum_i(Lv_i * ||v_i||_1)

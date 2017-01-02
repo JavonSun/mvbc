@@ -82,7 +82,7 @@ M{1} = M_phe;
 M{2} = M_gen;
 
 %% Proposed Method
-[z1, U1, V1, obj1] = mvslra_prox(M, sz1, sv1, ini_v1);
+[z1, U1, V1, obj1] = mvlrrl0(M, sz1, sv1, ini_v1);
 fprintf('\nThe distribution of the true labels of the first identified cluster.\n');
 results1=tbl(lbl(z1 ~= 0));
 disp([[{'True Label: '};{'Counts: '}] num2cell(results1)]);
@@ -92,7 +92,7 @@ M2_dv{1} = M_phe(z1 == 0, :);
 M2_dv{2} = M_gen(z1 == 0, :);
 lbl2 = lbl(z1 == 0);
 
-[z2, U2, V2, obj2] = mvslra_prox(M2_dv, sz2, sv2, ini_v2);
+[z2, U2, V2, obj2] = mvlrrl0(M2_dv, sz2, sv2, ini_v2);
 fprintf('\nThe distribution of the true labels of the second identified cluster.\n');
 results2=tbl(lbl(z2 ~= 0));
 disp([[{'True Label: '};{'Counts: '}] num2cell(results2)]);

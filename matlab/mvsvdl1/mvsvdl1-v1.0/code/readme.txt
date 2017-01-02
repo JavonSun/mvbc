@@ -1,4 +1,4 @@
-1. mvssvd.m implements the method proposed in these papers :
+1. mvsvdl1.m implements the method proposed in these papers:
 Multi-view singular value decomposition for disease subtyping and genetic associations
 Jiangwen Sun, Henry R Kranzler and Jinbo Bi
 BMC Genetics, 15 (1), 2014
@@ -7,7 +7,7 @@ Multi-view biclustering for genotype-phenotype association studies of complex di
 Jiangwen Sun, Jinbo Bi and Henry R Kranzler
 In the proceedings of the IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2013
 
-2. sample_script_mvssvd.m is a sample script to run this method
+2. sample_script_mvsvdl1.m is a sample script to run this method
 
 3. nmi.m computes normalized mutual information (NMI) between two cluster solutions.
 

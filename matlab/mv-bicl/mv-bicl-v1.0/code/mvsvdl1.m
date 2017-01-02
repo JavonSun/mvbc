@@ -1,4 +1,4 @@
-function [rowClus, colClus, z, U, V, obj] = mvssvd(M, lz, lv, exp_z) 
+function [rowClus, colClus, z, U, V, obj] = mvsvdl1(M, lz, lv, exp_z) 
 
 % Optimization problem:
 % \sum_i(||M_i - \sigma_i * (u_i \dot z) * v_i^T||_F^2) + \lambda_z * ||\sigma_1 * z||_1
